@@ -1,0 +1,14 @@
+
+
+.contact{
+
+    padding: 10rem 0rem;
+}
+.devname{
+    padding-top: 1rem;
+}
+
+.details-contact{
+    justify-content: space-around;
+    align-items: flex-start;
+}

@@ -1,0 +1,110 @@
+.logins{
+    padding-top: 5%;
+    padding-bottom: 5%;
+  
+}
+
+.logins .row{
+    align-items: flex-start;
+}
+
+.forms{
+    padding: 4rem 5rem;
+}
+
+.form-pro{
+    box-shadow: 1px 7px 9px 1px rgba(119, 119, 119, 0.25);
+    -moz-box-shadow: 1px 7px 9px 1px rgba(119, 119, 119, 0.25);
+    -webkit-box-shadow: 1px 7px 9px 1px rgba(119, 119, 119, 0.25);
+}
+
+ .form-pro h3{
+    color: #6C63FF;
+}
+
+.link-account{
+    margin-left: 2rem;
+}
+
+.form-part{
+    background-color: #6C63FF;
+    color: white;
+    height: 100%;
+   
+}
+
+.form-pro{
+    background-color: white;
+   
+}
+.banner-contact{
+    position: relative;
+    margin-top: 9.5rem;
+  
+   
+}
+.banner-contact img{
+    position: absolute;
+
+    bottom: -12rem;
+    left: 0;
+
+}
+
+.form-part button{
+    background-color: white;
+    color: #6C63FF;
+    
+}
+
+.form-part a {
+    color: white;
+}
+
+.form-part .alert-success{
+    margin-top: 2rem;
+    margin-bottom: -10rem;
+}
+
+
+.form-pro .alert-success{
+    margin-top: 2rem;
+ 
+}
+
+
+
+  
+/*--ADD---*/
+
+
+@media (max-width: 600px)
+{
+    .login .forms{
+        padding: 3rem 1rem;
+    }
+    .login  .mt{
+        text-align: center;
+    }
+    .login  button.btn {
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .login  .link-account{
+        font-size: 0.9rem;
+    margin: auto;
+
+    }
+    .login .banner-contact{
+        margin-top: 2.5rem;
+    }
+
+
+    .login .banner-contact img{
+        display: none;
+    }
+    .login .form-pro{
+        padding-top:3rem;
+    }
+}

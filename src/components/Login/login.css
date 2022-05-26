@@ -1,0 +1,36 @@
+
+.login{
+    background-color: #FAFAFA;
+}
+.connexion{
+    padding: 8vh 0vh;
+}
+.card-form{
+    box-shadow: 1px 7px 9px 1px rgba(119, 119, 119, 0.25);
+    -moz-box-shadow: 1px 7px 9px 1px rgba(119, 119, 119, 0.25);
+    -webkit-box-shadow: 1px 7px 9px 1px rgba(119, 119, 119, 0.25);
+    padding:  3rem;
+    border-radius: 0.5rem;
+    background-color: white;
+
+}
+
+.forgetData{
+    font-size: 0.9rem;
+    font-style: italic;
+}
+.login h3{
+    color: #6C63FF;
+}
+
+.errormessage{
+    color:red;
+}
+
+.email-error{
+    border: 1px solid red;
+}
+
+
+
+

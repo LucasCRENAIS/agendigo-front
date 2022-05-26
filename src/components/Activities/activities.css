@@ -1,0 +1,48 @@
+.city{
+    padding: 1rem;
+}
+
+.city span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #6C63FF;
+}
+
+.cities-card{
+    box-shadow: 1px 7px 9px 1px rgba(119, 119, 119, 0.25);
+    -moz-box-shadow: 1px 7px 9px 1px rgba(119, 119, 119, 0.25);
+    -webkit-box-shadow: 1px 7px 9px 1px rgba(119, 119, 119, 0.25);
+    margin: 1rem 0rem;
+}
+
+.row{
+    margin: 1rem 0rem;
+}
+
+.cities{
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+}
+
+.cities-more{
+    color: #6C63FF;
+    text-decoration: underline;
+}
+
+.cities img{
+    width: 100%
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.green-word{
+    color: #46E395;
+    font-weight: bold;
+}
+
+.blue-word{
+    color: #6C63FF;
+    font-weight: bold;
+}
