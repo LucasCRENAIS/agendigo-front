@@ -36,7 +36,7 @@ const Companies = ({ApiCompanies, companies, city, name}) =>{
         <div className="activity-services">
         <Link to={`/company/${company.id}/services`} >
         <div className="companies-card">
-        <div style={{ backgroundImage: `url(http://ec2-3-88-101-18.compute-1.amazonaws.com/images/${company.image})` }} class="img-banner"></div>
+        <div style={{ backgroundImage: `url(https://agendigo.herokuapp.com/images/${company.image})` }} class="img-banner"></div>
             <div class="row">
                     <div class="service col-md-6">
                         <h4>{company.company_name}</h4>
@@ -59,8 +59,8 @@ const Companies = ({ApiCompanies, companies, city, name}) =>{
   }
   </div>
     <div className="col-md-6 pics">
-          <img className ="img-fluid avatars-users-icons" src="http://ec2-3-88-101-18.compute-1.amazonaws.com/images/avatars-users-icons.svg"></img>
-           <img className ="img-fluid services-pics" src="http://ec2-3-88-101-18.compute-1.amazonaws.com/images/pics-categories.jpg"></img>
+          <img className ="img-fluid avatars-users-icons" src="https://agendigo.herokuapp.com/images/avatars-users-icons.svg"></img>
+           <img className ="img-fluid services-pics" src="https://agendigo.herokuapp.com/images/pics-categories.jpg"></img>
     </div>
     
     <Link to={`/cities/${city}/activities`}>

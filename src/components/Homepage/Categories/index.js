@@ -24,7 +24,7 @@ const Categories = ({categoriesList}) => {
             categoriesList.map((category) =>{
   const jsxDirectory =(
           <div className="category">
-              <div  className=" cat"><img src={`http://ec2-3-88-101-18.compute-1.amazonaws.com/images/${category.image}`} alt=""></img><h3 className="title-cat-home">{category.name}</h3></div>
+              <div  className=" cat"><img src={`https://agendigo.herokuapp.com/images/${category.image}`} alt=""></img><h3 className="title-cat-home">{category.name}</h3></div>
               <p className="mt-3">{category.description}</p>
           </div>
           );

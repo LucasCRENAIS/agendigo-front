@@ -30,7 +30,7 @@ activities.map((activity) =>{
     <div className="col-md-3">
         <div className="cities-card">
         <Link to={`/cities/${city}/activities/${activity.name}/list`}>
-            <img className="img-fluid img-cities" src={`http://ec2-3-88-101-18.compute-1.amazonaws.com/images/${activity.image}`} alt=""></img>
+            <img className="img-fluid img-cities" src={`https://agendigo.herokuapp.com/images/${activity.image}`} alt=""></img>
             <div className="city">
                 <p>Je souhaite accéder au <br></br>
                   service <span>{activity.name}</span></p>

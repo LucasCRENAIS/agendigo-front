@@ -33,7 +33,7 @@ const Services = ({ApiServices, services,isConnected,markersData, idService,acti
 
     <div className="details-services py-3">
         <div className="services-card">
-        <div style={{ backgroundImage: `url(http://ec2-3-88-101-18.compute-1.amazonaws.com/images/${service.company.image})` }} className="img-banner"></div>
+        <div style={{ backgroundImage: `url(https://agendigo.herokuapp.com/images/${service.company.image})` }} className="img-banner"></div>
             <div className="card-bottom row">
                     <div className="service col-md-8">
                         <h4>{service.company.company_name}</h4>
@@ -247,7 +247,7 @@ const Services = ({ApiServices, services,isConnected,markersData, idService,acti
     
 <div className="col-md-4 horaires p-4">
   <h5 className=" hours-title">Nos horaires d'ouvertures</h5>
-  <img className="chrono" src="http://ec2-3-88-101-18.compute-1.amazonaws.com/images/chrono.svg"></img>
+  <img className="chrono" src="https://agendigo.herokuapp.com/images/chrono.svg"></img>
 <div className="Open-hours row  ">
 
 <div className="days col-4 ">

@@ -53,7 +53,7 @@ const auth = (store) => (next) => (action) => {
       console.log('je suis dans email', username);
       console.log('je suis dans password', password);
       // effectuer mon appel à l'api
-      axios.post('http://ec2-3-88-101-18.compute-1.amazonaws.com/api/v1/login_check', { headers: {
+      axios.post('https://agendigo.herokuapp.com/api/v1/login_check', { headers: {
         Authorization: `Bearer ${token}`,
       },
       username,
@@ -85,7 +85,7 @@ const auth = (store) => (next) => (action) => {
       console.log('je suis dans email', email);
       console.log('je suis dans password', password);
       // effectuer mon appel à l'api
-      axios.post('http://ec2-3-88-101-18.compute-1.amazonaws.com/api/v1/signin', {
+      axios.post('https://agendigo.herokuapp.com/api/v1/signin', {
         email,
         password,
         company_name,
@@ -116,7 +116,7 @@ const auth = (store) => (next) => (action) => {
       const { email, password,  firstname, lastname } = store.getState().signinCust;
 
       // effectuer mon appel à l'api
-      axios.post('http://ec2-3-88-101-18.compute-1.amazonaws.com/api/v1/signin', {
+      axios.post('https://agendigo.herokuapp.com/api/v1/signin', {
         email,
         password,
         firstname,
@@ -142,7 +142,7 @@ const auth = (store) => (next) => (action) => {
     case CITIES: {
       
       // effectuer mon appel à l'api
-      axios.get('http://ec2-3-88-101-18.compute-1.amazonaws.com/api/v1/cities/')
+      axios.get('https://agendigo.herokuapp.com/api/v1/cities/')
         .then((response) => {
           
           store.dispatch(saveCities(response.data));
@@ -158,7 +158,7 @@ const auth = (store) => (next) => (action) => {
 
       case CATEGORIES: {
         // effectuer mon appel à l'api
-        axios.get('http://ec2-3-88-101-18.compute-1.amazonaws.com/api/v1/')
+        axios.get('https://agendigo.herokuapp.com/api/v1/')
           .then((response) => {
             console.log('categories:',response)
             store.dispatch(saveCategories(response.data));
@@ -177,7 +177,7 @@ const auth = (store) => (next) => (action) => {
           // effectuer mon appel à l'api
          // je récupère le tableau d'objet cities depuis le store
          console.log('Palyload Activities',action);
-          axios.get(`http://ec2-3-88-101-18.compute-1.amazonaws.com/api/v1/cities/${action.city}/activities`, {
+          axios.get(`https://agendigo.herokuapp.com/api/v1/cities/${action.city}/activities`, {
      
           })
             .then((response) => {
@@ -195,7 +195,7 @@ const auth = (store) => (next) => (action) => {
 
           case COMPANIES: {
 
-             axios.get(`http://ec2-3-88-101-18.compute-1.amazonaws.com/api/v1/cities/${action.city}/activities/${action.name}/list`, {
+             axios.get(`https://agendigo.herokuapp.com/api/v1/cities/${action.city}/activities/${action.name}/list`, {
          
             })
               .then((response) => {
@@ -213,7 +213,7 @@ const auth = (store) => (next) => (action) => {
 
             case SERVICES: {
               console.log('Payload Companies',action);
-               axios.get(`http://ec2-3-88-101-18.compute-1.amazonaws.com/api/v1/company/${action.id}/services`, {
+               axios.get(`https://agendigo.herokuapp.com/api/v1/company/${action.id}/services`, {
            
               })
                 .then((response) => {
@@ -231,7 +231,7 @@ const auth = (store) => (next) => (action) => {
               case DATES: {
 
                 console.log('Payload DATES',action);
-                 axios.get(`http://ec2-3-88-101-18.compute-1.amazonaws.com/api/v1/company/${action.id}/services/${action.idService}`, {
+                 axios.get(`https://agendigo.herokuapp.com/api/v1/company/${action.id}/services/${action.idService}`, {
                 
                 })
                   .then((response) => {
@@ -255,7 +255,7 @@ const auth = (store) => (next) => (action) => {
                   const service_id = action.idService;
              
                   // effectuer mon appel à l'api
-                  axios.post(`http://ec2-3-88-101-18.compute-1.amazonaws.com/api/v1/appointments/company/${action.id}/create`, {
+                  axios.post(`https://agendigo.herokuapp.com/api/v1/appointments/company/${action.id}/create`, {
                   date,
                   hours,
                   service_id,

@@ -16,7 +16,7 @@ const CompanyExample = ({id}) => {
     useEffect(
         () => {
             Axios
-                .get(`http://ec2-3-88-101-18.compute-1.amazonaws.com/api/v1/company/${id}/services`)
+                .get(`https://agendigo.herokuapp.com/api/v1/company/${id}/services`)
                 .then(
                     (response) => {
                         setCompany(response.data[0]);
